@@ -33,12 +33,6 @@ cd Desafio_iPrazos
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=SenhaForte123" -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:2025-latest
 ```
 
-- **Oracle**: Utilize o Docker para rodar o Oracle localmente.
-
-```bash
-docker run -d -p 1521:1521 -e ORACLE_PASSWORD=SenhaForte123 --name oracle-container container-image
-```
-
 ### 3. Configurar a String de Conexão
 
 No arquivo `appsettings.json`, configure a string de conexão para o banco de dados escolhido:
