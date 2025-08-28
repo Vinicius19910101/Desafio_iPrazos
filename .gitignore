@@ -1,0 +1,60 @@
+# Build Folders
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET / IIS
+appsettings*.json
+wwwroot/
+*.log
+
+# User-specific files
+*.rsuser
+*.DotSettings.user
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rider & ReSharper
+_ReSharper*/
+*.DotSettings
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# EF Core Migrations
+Migrations/
+*.sqlite
+
+# Others
+*.db
+*.bak
+*.swp
