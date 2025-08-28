@@ -33,6 +33,14 @@ cd Desafio_iPrazos
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=SenhaForte123" -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:2025-latest
 ```
 
+-Criando o banco via **migrations** 
+
+```bash
+cd "API Rest"
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
+
 ### 3. Configurar a String de Conexão
 
 No arquivo `appsettings.json`, configure a string de conexão para o banco de dados escolhido:
@@ -47,16 +55,16 @@ No arquivo `appsettings.json`, configure a string de conexão para o banco de da
 
 ### 4. Executar o Projeto
 
-- **Aplicação Console**:
-
-```bash
-dotnet run
-```
-
 - **API REST**:
 
 ```bash
 dotnet run --project ApiRest/ApiRest.csproj
+```
+
+- **Aplicação Console (Crawler) - executar no diretório onde está o arquivo TJSPCrawler.csproj**:
+
+```bash
+dotnet run
 ```
 
 ## Contribuições
