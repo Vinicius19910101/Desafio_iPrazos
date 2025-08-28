@@ -2,6 +2,14 @@
 
 Este projeto consiste em um **crawler** desenvolvido em **C#** que busca dados do **Tribunal de Justiça de São Paulo (TJSP)** e os armazena em um banco de dados, facilitando a consulta e análise dessas informações.
 
+```
+OBS: Como o site de origem possui proteção por reCAPTCHA e bloqueia tentativas de acesso automatizado, não é possível realizar chamadas diretas via robô ou crawler durante o desenvolvimento.
+Dessa forma, para viabilizar os testes e a integração, estou utilizando dados mockados que simulam as respostas esperadas do sistema real. Essa abordagem permite:
+	•	Continuar o desenvolvimento sem depender da instabilidade ou restrição do ambiente externo.
+	•	Testar regras de negócio e fluxos internos de forma controlada.
+	•	Garantir que, quando o acesso legítimo ao sistema for possível (ex.: via credenciais oficiais, API homologada ou liberação de whitelisting), a integração real possa ser validada sem impacto no cronograma.
+```
+
 ## Funcionalidades
 
 - **Rastreamento de dados**: Coleta informações diretamente do site do TJSP.
